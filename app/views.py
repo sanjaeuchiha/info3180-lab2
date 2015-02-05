@@ -5,7 +5,7 @@ Werkzeug Documentation:  http://werkzeug.pocoo.org/documentation/
 
 This file creates your application.
 """
-
+import os
 from app import app
 from flask import render_template, request, redirect, url_for
 
@@ -13,6 +13,8 @@ from flask import render_template, request, redirect, url_for
 ###
 # Routing for your application.
 ###
+
+
 
 @app.route('/')
 def home():
